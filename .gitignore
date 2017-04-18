@@ -1,0 +1,6 @@
+node_modules
+dist/*
+*fragment
+*.mp4
+*.mpd
+*test*

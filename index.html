@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <video id=example-video width=600 height=300 class="video-js vjs-default-skin" controls autoplay>
+    </video>
+    <script src="./dist/vendor.bundle.js"></script>
+    <script src="./dist/entry.js"></script>
+    <script>
+    var video = document.querySelector('video');
+
+    var player = new Hls(video, [{
+        src: './enterprise_dashinit_fragment/enterprise_dashinit_fragment.m3u8',
+        mimeCodec: 'video/mp4; codecs="avc1.4D401E, mp4a.40.2'
+    }, {
+        src: './icefire_dashinit_fragment/icefire_dashinit_fragment.m3u8',
+        mimeCodec: 'video/mp4; codecs="avc1.4D401E, mp4a.40.2'
+    }]);
+    </script>
+</body>
+
+</html>
